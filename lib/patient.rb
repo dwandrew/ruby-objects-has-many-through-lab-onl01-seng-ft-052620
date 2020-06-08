@@ -12,22 +12,20 @@ class Patient
     end
 
 
-    def new_appointment
-      
-    end
-    # def new_appointment(date, doctor)
-    #     Appointment.new(date, self, doctor)
-    # end
-
-    # def
-
-    # def appointments
-    #     Appointment.all.map{|k| k if k.patient.name == self.name}.select{|k| k}
-    # end
     
-    # def doctors
-    #     Appointment.all.map{|k| k.doctor if k.patient.name == self.name}.select{|k| k}
-    # end
+    def new_appointment(date, doctor)
+        Appointment.new(date, self, doctor)
+    end
+
+    def
+
+    def appointments
+        Appointment.all.map{|k| k if k.patient.name == self.name}.select{|k| k}
+    end
+    
+    def doctors
+        Appointment.all.map{|k| k.doctor if k.patient.name == self.name}.select{|k| k}
+    end
     
     def save
     @@all<<self
