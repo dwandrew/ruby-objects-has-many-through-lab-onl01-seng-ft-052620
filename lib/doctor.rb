@@ -23,7 +23,7 @@ class Doctor
 
     def patients
       binding.pry
-        # Appointment.all.map{|k| k.patient if k.doctor.name == self.name}.select{|k| k}
+        # Appointment.all.map{|k| k.patient if k.doctor.name == self.name}
     end
 
 
