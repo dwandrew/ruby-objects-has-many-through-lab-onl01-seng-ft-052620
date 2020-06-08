@@ -1,6 +1,7 @@
 require_relative 'doctor.rb'
 require_relative 'appointment.rb'
 
+require 'pry'
 
 class Patient
     attr_reader :name
@@ -14,6 +15,7 @@ class Patient
 
     
     def new_appointment(date, doctor)
+      binding.pry
         Appointment.new(date, self, doctor)
     end
     
