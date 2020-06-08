@@ -22,7 +22,7 @@ class Doctor
     end
 
     def patients
-        Appointment.all.map{|k| k.patient if k.doctor.name == self.name}.select{|k| k}
+        # Appointment.all.map{|k| k.patient if k.doctor.name == self.name}.select{|k| k}
     end
 
 
