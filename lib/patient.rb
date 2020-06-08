@@ -20,8 +20,6 @@ class Patient
     end
     
 
-    def
-
     def appointments
         Appointment.all.map{|k| k if k.patient.name == self.name}.select{|k| k}
     end
